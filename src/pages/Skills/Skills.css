@@ -9,8 +9,8 @@
     display: inline-block;
     flex-direction: row;
     justify-content: space-around;
-    padding-right: 10%;
-    padding-left: 10%;
+    padding-right: 5%;
+    padding-left: 5%;
     text-align: center;
 }
 
@@ -34,3 +34,6 @@
     padding: 5px;
 }
 
+.skills-icons-ul {
+    padding: 10px 0 10px 0;
+}

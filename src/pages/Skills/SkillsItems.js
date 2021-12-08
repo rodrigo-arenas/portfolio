@@ -3,7 +3,7 @@ import "./Skills.css"
 
 const SkillsItems = (props) => {
     return (
-        <ul className={"skills-icons"}>
+        <ul className={"skills-icons-ul"}>
             {props.config.map((item) => (
                     <li className={item.className} key={item.id}>
                                 <p className={"p-skills"}>
