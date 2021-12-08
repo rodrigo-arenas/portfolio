@@ -4,12 +4,13 @@ import {Link} from "react-router-dom"
 import "./NavBar.css"
 import generalConfig from "../resources/configs/generalConfig";
 
-const NavBarItems = () => {
+const NavBarItems = (props) => {
+
     return (
         <Nav>
             {generalConfig.sidebarData.map((item) => (
                     <Nav.Item key={item.id}>
-                        <Nav.Link as={Link} to={item.path}>
+                        <Nav.Link as={Link} to={item.path} onClick={props.onSelection}>
                             {item.icon}
                             <span>{item.title}</span>
                         </Nav.Link>
