@@ -4,16 +4,19 @@
     color: #f5f5f5;
     list-style-type: none;
     horiz-align: center;
+    vertical-align: center;
     align-items: center;
     display: inline-block;
     flex-direction: row;
     justify-content: space-around;
     padding-right: 10%;
     padding-left: 10%;
+    text-align: center;
 }
 
 .sec-skills-icons {
     font-size: 1em;
+    text-align: center;
 }
 
 .skills-div {

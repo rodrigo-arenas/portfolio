@@ -33,7 +33,7 @@ const skillsConfig = {
             id: "skills-2",
             className: "skills-icons",
             icon: <SiMicrosoftsqlserver size={50}/>,
-            text: "MS SQL Server"
+            text: "MSSQL"
         },
         {
             id: "skills-3",
@@ -52,43 +52,43 @@ const skillsConfig = {
         {
             id: "skills-5",
             className: "sec-skills-icons",
-            icon: <GrMysql size={40}/>,
+            icon: <GrMysql size={50}/>,
             text: "Mysql"
         },
         {
             id: "skills-6",
             className: "sec-skills-icons",
-            icon: <SiRedis size={40}/>,
+            icon: <SiRedis size={50}/>,
             text: "Redis"
         },
         {
             id: "skills-7",
             className: "sec-skills-icons",
-            icon: <SiWindowsterminal size={40}/>,
+            icon: <SiWindowsterminal size={50}/>,
             text: "Bash"
         },
         {
             id: "skills-8",
             className: "sec-skills-icons",
-            icon: <SiJavascript size={40}/>,
-            text: "JavaScript"
+            icon: <SiJavascript size={50}/>,
+            text: "JS"
         },
         {
             id: "skills-9",
             className: "sec-skills-icons",
-            icon: <SiCss3 size={40}/>,
+            icon: <SiCss3 size={50}/>,
             text: "CSS 3"
         },
         {
             id: "skills-10",
             className: "sec-skills-icons",
-            icon: <SiHtml5 size={40}/>,
+            icon: <SiHtml5 size={50}/>,
             text: "HTML 5"
         },
         {
             id: "skills-11",
             className: "sec-skills-icons",
-            icon: <SiReact size={40}/>,
+            icon: <SiReact size={50}/>,
             text: "React"
         },
     ]
