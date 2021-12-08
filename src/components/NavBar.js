@@ -11,7 +11,7 @@ const NavBar = () => {
 
     return (
         <Navbar className={"navbar"} collapseOnSelect fixed={'top'} expand={'sm'}>
-            <Container>
+            <Container fluid>
                 <Navbar.Toggle aria-controls='responsive-navbar-nav'>
                     <AiOutlineMenu className="toggle-icon"/>
                 </Navbar.Toggle>

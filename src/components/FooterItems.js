@@ -6,7 +6,7 @@ const FooterItems = () => {
     return (
         <ul className={"social-icons"}>
             {footerConfig.icons.map((item) => (
-                    <li className={item.className}>
+                    <li className={item.className} key={item.id}>
                         <a href={item.url}
                            style={{color: "#f5f5f5"}}
                            target={item.target}

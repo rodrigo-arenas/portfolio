@@ -1,7 +1,11 @@
 .container {
     position: relative;
     margin-left: 0;
+    padding-left: 0;
+    max-width: 10px;
 }
+
+
 
 .navbar {
     background-color: #263238;
@@ -42,5 +46,5 @@
 }
 
 span {
-    margin-left: 10px;
+    margin-left: 1rem;
 }

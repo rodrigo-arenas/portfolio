@@ -1,0 +1,33 @@
+.sec-skills-icons,
+.skills-icons {
+    bottom: 0 !important;
+    color: #f5f5f5;
+    list-style-type: none;
+    horiz-align: center;
+    align-items: center;
+    display: inline-block;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-right: 10%;
+    padding-left: 10%;
+}
+
+.sec-skills-icons {
+    font-size: 1em;
+}
+
+.skills-div {
+    align-items: center;
+    text-align: center;
+}
+
+.skills-h1 {
+    min-height: 100px;
+    width: 100%;
+    overflow: hidden;
+    padding-top: 60px !important;
+    padding-bottom: 25px;
+    color: #f5f5f5;
+}
+
+
