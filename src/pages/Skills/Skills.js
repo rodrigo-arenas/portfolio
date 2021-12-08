@@ -7,14 +7,14 @@ const Skills = () => {
         <section id="skills">
             <div>
             <div className="skills-div">
-                <h1 className="skills-h1">
-                    <span className="main-skills">Main Skills</span>
+                <h1 className="main-skills-h1">
+                    <span className="main-skills"><strong>Main Skills</strong></span>
                 </h1>
                 <div className="main-skills">
                     <SkillsItems config={skillsConfig.mainSkills}/>
                 </div>
-                <h1 className="skills-h1">
-                    <span className="main-skills">Complementary Skills</span>
+                <h1 className="complementary-skills-h1">
+                    <span className="complementary-skills"><strong>Complementary Skills</strong></span>
                 </h1>
                 <div className="complementary-skills">
                     <SkillsItems config={skillsConfig.complementarySkills}/>

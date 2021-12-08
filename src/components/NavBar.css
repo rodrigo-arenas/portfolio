@@ -5,12 +5,12 @@
     max-width: 10px;
 }
 
-
-
 .navbar {
     background-color: #263238;
     text-align: left;
     width: 100%;
+    position: sticky;
+
 }
 
 .navbar-nav .nav-link {

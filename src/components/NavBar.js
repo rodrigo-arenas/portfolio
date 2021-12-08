@@ -16,7 +16,7 @@ const NavBar = () => {
 
 
     return (
-        <Navbar className={"navbar"} fixed={'top'} expand={'sm'} expanded={expanded}>
+        <Navbar className={"navbar"} expand={'sm'} expanded={expanded}>
             <Container fluid>
                 <Navbar.Toggle
                     aria-controls='responsive-navbar-nav'

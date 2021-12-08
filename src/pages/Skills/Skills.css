@@ -24,13 +24,13 @@
     text-align: center;
 }
 
-.skills-h1 {
-    min-height: 100px;
+.main-skills-h1,
+.complementary-skills-h1 {
     width: 100%;
     overflow: hidden;
-    padding-top: 70px !important;
-    padding-bottom: 25px;
+    vertical-align:middle;
     color: #f5f5f5;
+    background-color: #66806A;
+    padding: 5px;
 }
-
 
