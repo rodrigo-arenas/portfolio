@@ -1,12 +1,12 @@
 import React from "react";
 import Typewriter from "typewriter-effect";
-import configData from "../../resources/configData";
+import homeConfig from "../../resources/configs/homeConfig";
 
 const DynamicTyping = () => {
     return (
         <Typewriter
             options={{
-                strings: configData.home.titles,
+                strings: homeConfig.titles,
                 autoStart: true,
                 loop: true,
                 deleteSpeed: 60

@@ -5,6 +5,8 @@
 
 .navbar {
     background-color: #263238;
+    text-align: left;
+    width: 100%;
 }
 
 .navbar-nav .nav-link {

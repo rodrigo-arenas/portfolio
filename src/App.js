@@ -7,6 +7,7 @@ import NavBar from "./components/NavBar";
 import ScrollToTop from "./components/ScrollToTop";
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Footer from "./components/Footer";
 
 function App() {
     return (
@@ -20,6 +21,7 @@ function App() {
                     <Route path={"/Blogs"} exact element={<Blogs/>}/>
                     <Route path={"/Skills"} exact element={<Skills/>}/>
                 </Routes>
+                <Footer/>
             </div>
         </Router>
 

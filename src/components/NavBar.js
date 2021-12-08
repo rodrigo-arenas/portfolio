@@ -3,7 +3,7 @@ import Navbar from "react-bootstrap/Navbar";
 import Container from "react-bootstrap/Container";
 import {AiOutlineMenu} from "react-icons/ai"
 
-import SidebarItems from "./SidebarItems";
+import NavBarItems from "./NavBarItems";
 import "./NavBar.css"
 
 const NavBar = () => {
@@ -16,7 +16,7 @@ const NavBar = () => {
                     <AiOutlineMenu className="toggle-icon"/>
                 </Navbar.Toggle>
                 <Navbar.Collapse id='responsive-navbar-nav'>
-                    <SidebarItems/>
+                    <NavBarItems/>
                 </Navbar.Collapse>
             </Container>
         </Navbar>)
