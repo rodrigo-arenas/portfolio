@@ -53,7 +53,7 @@ const skillsConfig = {
             id: "skills-5",
             className: "sec-skills-icons",
             icon: <GrMysql size={50}/>,
-            text: "Mysql"
+            text: "MySQL"
         },
         {
             id: "skills-6",

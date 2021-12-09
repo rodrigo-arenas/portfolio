@@ -9,7 +9,6 @@ const SkillsItems = (props) => {
                                 <p className={"p-skills"}>
                                     {item.icon}
                                 </p>
-                        <br/>
                                 <p className={"p" + item.className}>
                                     {item.text}
                                 </p>
