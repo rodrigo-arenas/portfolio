@@ -1,13 +1,14 @@
 import {BrowserRouter as Router, Routes, Route} from "react-router-dom";
-import Blogs from "./pages/Blogs"
+import NavBar from "./components/NavBar";
 import Home from "./pages/Home/Home";
 import Projects from "./pages/Projects";
 import Skills from "./pages/Skills/Skills";
-import NavBar from "./components/NavBar";
+import Blogs from "./pages/Blogs"
 import ScrollToTop from "./components/ScrollToTop";
+import Footer from "./components/Footer";
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Footer from "./components/Footer";
+
 
 function App() {
     return (

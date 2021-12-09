@@ -1,0 +1,37 @@
+.card-group {
+    justify-content: center;
+}
+
+.card-grid, .card {
+    padding: 5px 5px !important;
+    height: auto !important;
+    max-width: 20rem;
+    justify-content: center;
+
+
+}
+
+.card-body {
+    background-color: #F6F5F5;
+    margin: 0;
+}
+
+.card-img,
+.card-img-top,
+.card-img-bottom {
+    height: 10rem;
+    width: auto;
+    align-content: flex-start;
+}
+
+.card-text {
+height: 6rem;
+}
+
+.btn, .btn-primary {
+    position: absolute;
+    bottom: 5px;
+    color: #263238;
+    overflow: auto;
+
+}
