@@ -1,6 +1,6 @@
 const projectConfig = [
     {
-        id: "project-0",
+        id: "project-4",
         title: "Sklearn Genetic Opt",
         github: "https://github.com/rodrigo-arenas/Sklearn-genetic-opt",
         documentation: "https://sklearn-genetic-opt.readthedocs.io/en/stable/",
@@ -9,7 +9,7 @@ const projectConfig = [
         target: "_blank"
     },
     {
-        id: "project-1",
+        id: "project-3",
         title: "Kafkaml Anomalies",
         github: "https://github.com/rodrigo-arenas/kafkaml-anomaly-detection",
         image: "https://raw.githubusercontent.com/rodrigo-arenas/kafkaml-anomaly-detection/main/docs/kafka_anomalies.png",
@@ -25,7 +25,7 @@ const projectConfig = [
         target: "_blank"
     },
     {
-        id: "project-3",
+        id: "project-1",
         title: "Pyworkforce",
         github: "https://github.com/rodrigo-arenas/pyworkforce",
         image: "https://miro.medium.com/max/1400/1*UDnhOFK35IbAPx15wkMgVg.jpeg",
@@ -34,7 +34,7 @@ const projectConfig = [
         target: "_blank"
     },
     {
-        id: "project-4",
+        id: "project-0",
         title: "Scikit-Pipes",
         github: "https://github.com/rodrigo-arenas/scikit-pipes",
         image: "https://raw.githubusercontent.com/rodrigo-arenas/scikit-pipes/master/docs/images/logo16.png",

@@ -1,10 +1,9 @@
 import React from "react";
+import homeConfig from "../../resources/configs/homeConfig";
 
 const About = () => {
-    const about = "I've been working for over six years on data science projects. and keep " +
-        "learning every single day."
-    const aboutExit = "I'm fluent at Python, SQL databases, BI tools, and more, " +
-        "with a deep interest in machine learning."
+    const about = homeConfig.about.start
+    const aboutExit = homeConfig.about.exit
 
     return (
         <section id="about">
