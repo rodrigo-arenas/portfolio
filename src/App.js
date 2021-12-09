@@ -9,13 +9,12 @@ import Footer from "./components/Footer";
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-
 function App() {
     return (
         <Router>
             <div className="App">
                 <NavBar/>
-                <ScrollToTop />
+                <ScrollToTop/>
                 <Routes>
                     <Route path={"/"} exact element={<Home/>}/>
                     <Route path={"/projects"} exact element={<Projects/>}/>

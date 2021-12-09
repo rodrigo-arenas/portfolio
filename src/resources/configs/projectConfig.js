@@ -1,26 +1,43 @@
 const projectConfig = [
     {
         id: "project-0",
+        title: "Sklearn-genetic-opt",
         url: "https://sklearn-genetic-opt.readthedocs.io/en/stable/",
         image: "https://raw.githubusercontent.com/rodrigo-arenas/Sklearn-genetic-opt/master/docs/images/progress_bar.gif",
-        title: "Sklearn-genetic-opt.",
         description: "scikit-learn models hyperparameters tuning and feature selection, using evolutionary algorithms.",
         target: "_blank"
     },
     {
         id: "project-1",
+        title: "Kafkaml anomalies detection",
         url: "https://github.com/rodrigo-arenas/kafkaml-anomaly-detection",
         image: "https://raw.githubusercontent.com/rodrigo-arenas/kafkaml-anomaly-detection/main/docs/kafka_anomalies.png",
-        title: "Kafkaml anomalies detection.",
         description: "Project for real-time anomaly detection using kafka and python.",
         target: "_blank"
     },
     {
         id: "project-2",
+        title: "Personal data scientist portfolio",
         url: "https://github.com/rodrigo-arenas/portfolio",
         image: "https://raw.githubusercontent.com/rodrigo-arenas/kafkaml-anomaly-detection/main/docs/kafka_anomalies.png",
-        title: "Personal data scientist portfolio",
-        description: "Source code of my current portfolio web page",
+        description: "Source code of my current portfolio web page.",
+        target: "_blank"
+    },
+    {
+        id: "project-3",
+        title: "Pyworkforce",
+        url: "https://github.com/rodrigo-arenas/pyworkforce",
+        image: "https://miro.medium.com/max/1400/1*UDnhOFK35IbAPx15wkMgVg.jpeg",
+        description: "Common tools for workforce management, schedule and optimization problems, " +
+            "built on top of packages like google's or-tools and custom modules.",
+        target: "_blank"
+    },
+    {
+        id: "project-4",
+        title: "Scikit-Pipes",
+        url: "https://github.com/rodrigo-arenas/scikit-pipes",
+        image: "https://raw.githubusercontent.com/rodrigo-arenas/scikit-pipes/master/docs/images/logo16.png",
+        description: "Scikit-Learn practical pre-defined Pipelines Hub.",
         target: "_blank"
     }
 ]

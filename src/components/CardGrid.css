@@ -5,10 +5,15 @@
 .card-grid, .card {
     padding: 5px 5px !important;
     height: auto !important;
-    max-width: 20rem;
     justify-content: center;
+    margin: 1rem;
+    min-width: 350px;
+    align-content: center;
+}
 
-
+.card {
+    width: 300px;
+    height: 150px;
 }
 
 .card-body {
@@ -25,7 +30,8 @@
 }
 
 .card-text {
-height: 6rem;
+    height: fit-content;
+    margin-bottom: 2rem;
 }
 
 .btn, .btn-primary {
@@ -33,5 +39,4 @@ height: 6rem;
     bottom: 5px;
     color: #263238;
     overflow: auto;
-
 }
