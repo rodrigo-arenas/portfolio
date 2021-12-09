@@ -8,7 +8,7 @@ const About = () => {
 
     return (
         <section id="about">
-            <div className="card" style={{backgroundColor: "#263238"}}>
+            <div className="about-card" style={{backgroundColor: "#263238"}}>
                 <div className="card-header">
                     <span
                         className="iconify"
@@ -34,7 +34,7 @@ const About = () => {
                         height: "auto",
                         fontSize: "132%",
                         lineHeight: "150%",
-                        backgroundColor: "#D3E4CD",
+                        backgroundColor: "#F6F6F6",
                         color: "#8e8d8a"
                     }}
                 >
