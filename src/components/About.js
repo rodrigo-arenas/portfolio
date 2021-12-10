@@ -1,9 +1,8 @@
 import React from "react";
-import homeConfig from "../../assets/configs/homeConfig";
 
-const About = () => {
-    const about = homeConfig.about.start
-    const aboutExit = homeConfig.about.exit
+const About = (props) => {
+    const about = props.about.start
+    const aboutExit = props.about.exit
 
     return (
         <section id="about">

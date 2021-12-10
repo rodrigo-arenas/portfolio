@@ -1,6 +1,6 @@
 import {Container, Row, Col} from "react-bootstrap";
-import DynamicTyping from "./DynamicTyping";
-import About from "./About";
+import DynamicTyping from "../../components/DynamicTyping";
+import About from "../../components/About";
 import homeConfig from "../../assets/configs/homeConfig";
 
 import "./Home.css"
@@ -15,10 +15,10 @@ const Home = () => {
                             {homeConfig.greeting}
                     </div>
                         <div style={{textAlign: "center"}}>
-                            <DynamicTyping/>
+                            <DynamicTyping titles={homeConfig.titles}/>
                         </div>
                         <div>
-                            <About/>
+                            <About about={homeConfig.about}/>
                         </div>
                     </Col>
                 </Row>
