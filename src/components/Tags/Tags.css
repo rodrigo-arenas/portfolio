@@ -1,0 +1,13 @@
+.tags {
+    margin: 0.5rem 0 0.5rem 0;
+}
+
+.tag {
+    font-size: 11px !important;
+    text-align: left !important;
+    padding: 5px 8px 5px 8px !important;
+    vertical-align: baseline;
+    font-weight: lighter !important;
+    margin: 0 6px 6px 2px;
+    letter-spacing: 1px;
+}

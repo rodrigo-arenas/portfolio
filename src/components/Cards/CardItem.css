@@ -10,7 +10,7 @@
 
 .card {
     background-color: #F6F6F6 !important;
-    box-shadow: 0 0 15px -5px antiquewhite;
+    box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.25), 0 0.4em 1.25em 0 rgba(0, 0, 0, 0.15) !important;
     overflow: hidden;
     display: flex;
     transition: 0.5s;

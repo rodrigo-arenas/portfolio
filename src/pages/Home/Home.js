@@ -1,6 +1,7 @@
 import {Container, Row, Col} from "react-bootstrap";
 import DynamicTyping from "../../components/DynamicTyping";
 import About from "../../components/About";
+import Timeline from "../../components/Timeline/Timeline";
 import homeConfig from "../../assets/configs/homeConfig";
 
 import "./Home.css"
@@ -13,7 +14,7 @@ const Home = () => {
                     <Col className="home-header">
                         <div>
                             {homeConfig.greeting}
-                    </div>
+                        </div>
                         <div style={{textAlign: "center"}}>
                             <DynamicTyping titles={homeConfig.titles}/>
                         </div>
@@ -22,6 +23,11 @@ const Home = () => {
                         </div>
                     </Col>
                 </Row>
+            </Container>
+            <Container fluid className="resume-content" id="resume">
+                <div className="col-md-8 mx-auto">
+                    <Timeline items={homeConfig.workTimeline}/>
+                </div>
             </Container>
         </section>)
 
