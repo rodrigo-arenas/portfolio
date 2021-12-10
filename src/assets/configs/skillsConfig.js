@@ -12,6 +12,7 @@ import {
     SiWindowsterminal
 } from "react-icons/si";
 import {GrMysql} from "react-icons/gr";
+import {FaGitAlt} from "react-icons/fa";
 
 import React from "react";
 
@@ -46,6 +47,12 @@ const skillsConfig = {
             className: "skills-icons",
             icon: <SiMicrosoftazure size={50}/>,
             text: "Azure"
+        },
+        {
+            id: "skills-5",
+            className: "skills-icons",
+            icon: <FaGitAlt size={50}/>,
+            text: "Git"
         }
     ],
     complementarySkills: [

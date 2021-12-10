@@ -13,7 +13,10 @@ const CardItem = (props) => {
     return (
 
         <div className={"card"} key={props.item.id}>
-            <a style={{display: "flex"}} href={mainUrl}>
+            <a style={{display: "flex"}}
+               href={mainUrl}
+               target={"_blank"}
+               rel={"noopener noreferrer"}>
                 <img src={props.item.image} className="card__img" alt={props.item.title}/>
             </a>
             <div className={"card__body"}>
