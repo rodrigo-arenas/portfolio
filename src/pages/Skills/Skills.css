@@ -9,9 +9,11 @@
     display: inline-block;
     flex-direction: row;
     justify-content: space-around;
-    padding-right: 5%;
-    padding-left: 5%;
+    padding: 2rem;
     text-align: center;
+    background-color: #263238;
+    margin: 2.5rem;
+    border-radius: 25px;
 }
 
 .sec-skills-icons {
@@ -23,6 +25,7 @@
     align-items: center;
     text-align: center;
 }
+
 
 .main-skills-h1,
 .complementary-skills-h1 {
@@ -36,4 +39,8 @@
 
 .skills-icons-ul {
     padding: 10px 0 10px 0;
+}
+
+.pskills-icons {
+    margin: 0;
 }

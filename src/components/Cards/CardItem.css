@@ -15,6 +15,7 @@
     display: flex;
     transition: 0.5s;
     border: none;
+    z-index: 1;
 }
 
 .card:hover {

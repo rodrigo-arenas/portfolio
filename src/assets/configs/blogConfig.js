@@ -3,6 +3,7 @@ const blogConfig = [
         id: "blog-5",
         title: "Real-time anomaly detection with Apache Kafka and Python",
         article: "https://towardsdatascience.com/real-time-anomaly-detection-with-apache-kafka-and-python-3a40281c01c9",
+        github: "https://github.com/rodrigo-arenas/kafkaml-anomaly-detection",
         image: "https://miro.medium.com/max/1400/1*Xem1rbG0Fa8DAhtez7mvsA.jpeg",
         description: "Learn how to make predictions over streaming data coming from Kafka using Python.",
         target: "_blank"
@@ -11,6 +12,7 @@ const blogConfig = [
         id: "blog-4",
         title: "Serve a machine learning model using Sklearn, FastAPI, and Docker",
         article: "https://medium.com/analytics-vidhya/serve-a-machine-learning-model-using-sklearn-fastapi-and-docker-85aabf96729b",
+        github: "https://github.com/rodrigo-arenas/fast-ml-deploy",
         image: "https://miro.medium.com/max/1400/1*dJ6N6mQncyG_MCVMhpqHbw.png",
         description: "Get your model machine learning model to production as a containerized API.",
         target: "_blank"
@@ -35,6 +37,7 @@ const blogConfig = [
         id: "blog-1",
         title: "Manage your machine learning life cycle with MLflow in Python",
         article: "https://medium.com/analytics-vidhya/manage-your-machine-learning-lifecycle-with-mlflow-in-python-d678d5f3c682",
+        github: "https://github.com/rodrigo-arenas/mlflow-basics",
         image: "https://miro.medium.com/max/1400/1*FhKrMpcUPeZxNsZpKNv4BA.png",
         description: "Enable collaboration across data scientists; gain control over different models versions, " +
             "multiple experiments within the same problem, and models management and deployment.",
