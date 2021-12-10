@@ -1,5 +1,5 @@
 import React from "react";
-import homeConfig from "../../resources/configs/homeConfig";
+import homeConfig from "../../assets/configs/homeConfig";
 
 const About = () => {
     const about = homeConfig.about.start

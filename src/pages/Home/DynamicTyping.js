@@ -1,6 +1,6 @@
 import React from "react";
 import Typewriter from "typewriter-effect";
-import homeConfig from "../../resources/configs/homeConfig";
+import homeConfig from "../../assets/configs/homeConfig";
 
 const DynamicTyping = () => {
     return (

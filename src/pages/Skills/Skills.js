@@ -1,5 +1,5 @@
 import SkillsItems from "./SkillsItems";
-import skillsConfig from "../../resources/configs/skillsConfig";
+import skillsConfig from "../../assets/configs/skillsConfig";
 import "./Skills.css"
 
 const Skills = () => {

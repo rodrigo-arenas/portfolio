@@ -1,4 +1,4 @@
-import footerConfig from "../../resources/configs/footerConfig";
+import footerConfig from "../../assets/configs/footerConfig";
 import React from "react";
 import "./Footer.css"
 

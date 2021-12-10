@@ -1,6 +1,6 @@
 import CardItem from "../components/Cards/CardItem";
 import "../components/Cards/CardItem.css";
-import projectConfig from "../resources/configs/projectConfig"
+import projectConfig from "../assets/configs/projectConfig"
 
 const Projects = () => {
     return (
