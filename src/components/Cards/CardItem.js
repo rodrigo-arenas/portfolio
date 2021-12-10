@@ -9,9 +9,11 @@ const CardItem = (props) => {
             <div className={"card__body"}>
                 <h2 className={"card__title"}><strong>{props.item.title}</strong></h2>
                 <p className={"card__description"}>{props.item.description}</p>
+                <hr className={"card__line"}/>
                 <CardIcons item={props.item}/>
             </div>
         </div>
+
     );
 }
 

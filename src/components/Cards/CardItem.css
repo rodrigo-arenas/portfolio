@@ -41,6 +41,7 @@
 
 .card__description {
     line-height: 1.5rem;
+    padding-bottom: 5px;
 }
 
 @media screen and (min-width: 500px) {
@@ -59,20 +60,25 @@
     }
 }
 
+
+.card__line {
+    border-top:1px dotted #000;
+    background:#263238;
+    width: 90%;
+    margin: auto;
+    position: absolute;
+    bottom: 2.7rem;
+}
+
 .card__btn {
     transition: 0.2s;
     color: #263238;
     padding-right: 1rem;
 }
 
-
 .card__btn:hover {
     color: #276678;
     transform: scale(1.2)
-}
-
-
-.card__btn:hover {
 }
 
 .card__footer {
