@@ -16,8 +16,8 @@ const homeConfig = {
         "Backend Developer"
     ],
     about: {
-        start: "I've been working for over six years on data science projects. and keep " +
-            "learning every single day.",
+        start: "I've been working for over six years on data science projects. " +
+            "I'm excited by learning new things and contributing to the data science community.",
         exit: "I'm fluent at Python, SQL databases, BI tools, and more, " +
             "with a deep interest in machine learning."
     },
@@ -28,7 +28,7 @@ const homeConfig = {
             company: "Globant",
             description: "Build AutoML models and make them available to non-technical " +
                 "users from a graphical interface.",
-            date: "2019-2021",
+            date: "2021-present",
             icon: <DiCodeigniter/>,
             tags: ["ml", "automl", "python", "docker", "redshift", "superset"]
         },

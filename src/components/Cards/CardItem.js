@@ -2,19 +2,12 @@ import CardIcons from "./CardIcons";
 import "./CardItem.css"
 
 const CardItem = (props) => {
-    let mainUrl = "#/"
-
-    if (props.item.article !== "" && props.item.hasOwnProperty("article")) {
-        mainUrl = props.item.article
-    } else if (props.item.github !== "" && props.item.hasOwnProperty("github")) {
-        mainUrl = props.item.github
-    }
 
     return (
 
         <div className={"card"} key={props.item.id}>
             <a style={{display: "flex"}}
-               href={mainUrl}
+               href={props.item.links[0].url}
                target={"_blank"}
                rel={"noopener noreferrer"}>
                 <img src={props.item.image} className="card__img" alt={props.item.title}/>

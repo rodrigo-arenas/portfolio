@@ -9,7 +9,7 @@ const Skills = () => {
             <div>
                 <div className="skills-div">
                     <h1 className="main-skills-h1">
-                        <span className="main-skills"><strong>Main Skills</strong></span>
+                        <span className="main-skills"><strong>Main Skills & Tools</strong></span>
 
                     </h1>
                     <AttentionSeeker effect={"flash"}>
@@ -20,7 +20,7 @@ const Skills = () => {
                         </div>
                     </AttentionSeeker>
                     <h1 className="complementary-skills-h1">
-                        <span className="complementary-skills"><strong>Complementary Skills</strong></span>
+                        <span className="complementary-skills"><strong>Complementary Skills & Tools</strong></span>
                     </h1>
                     <AttentionSeeker effect={"flash"}>
                         <div className="complementary-skills">
