@@ -22,12 +22,11 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    max-width: 10rem;
 }
 
 .about-card {
-    margin-left: 10rem;
-    margin-right: 10rem;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .card-header .card-body {
