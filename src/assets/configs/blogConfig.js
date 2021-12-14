@@ -7,11 +7,13 @@ const blogConfig = [
         id: "blog-5",
         title: "Real-time anomaly detection with Apache Kafka and Python",
         links: [
-            {   name: "article",
+            {
+                name: "article",
                 url: "https://towardsdatascience.com/real-time-anomaly-detection-with-apache-kafka-and-python-3a40281c01c9",
                 icon: <SiMedium/>
             },
-            {   name: "repo",
+            {
+                name: "repo",
                 url: "https://github.com/rodrigo-arenas/kafkaml-anomaly-detection",
                 icon: <AiFillGithub/>
             }
@@ -24,11 +26,13 @@ const blogConfig = [
         id: "blog-4",
         title: "Serve a machine learning model using Sklearn, FastAPI, and Docker",
         links: [
-            {   name: "article",
+            {
+                name: "article",
                 url: "https://medium.com/analytics-vidhya/serve-a-machine-learning-model-using-sklearn-fastapi-and-docker-85aabf96729b",
                 icon: <SiMedium/>
             },
-            {   name: "repo",
+            {
+                name: "repo",
                 url: "https://github.com/rodrigo-arenas/fast-ml-deploy",
                 icon: <AiFillGithub/>
             }
@@ -41,7 +45,8 @@ const blogConfig = [
         id: "blog-3",
         title: "Are You Still Using Grid Search for Hyperparameters Optimization?",
         links: [
-            {   name: "article",
+            {
+                name: "article",
                 url: "https://towardsdatascience.com/hyperparameters-tuning-from-grid-search-to-optimization-a09853e4e9b8",
                 icon: <SiMedium/>
             }
@@ -54,7 +59,8 @@ const blogConfig = [
         id: "blog-2",
         title: "Tune Your Scikit-learn Model Using Evolutionary Algorithms",
         links: [
-            {   name: "article",
+            {
+                name: "article",
                 url: "https://towardsdatascience.com/tune-your-scikit-learn-model-using-evolutionary-algorithms-30538248ac16",
                 icon: <SiMedium/>
             }
@@ -67,11 +73,13 @@ const blogConfig = [
         id: "blog-1",
         title: "Manage your machine learning life cycle with MLflow in Python",
         links: [
-            {   name: "article",
+            {
+                name: "article",
                 url: "https://medium.com/analytics-vidhya/manage-your-machine-learning-lifecycle-with-mlflow-in-python-d678d5f3c682",
                 icon: <SiMedium/>
             },
-            {   name: "repo",
+            {
+                name: "repo",
                 url: "https://github.com/rodrigo-arenas/mlflow-basics",
                 icon: <AiFillGithub/>
             }
@@ -85,7 +93,8 @@ const blogConfig = [
         id: "blog-0",
         title: "Workforce planning optimization using Python",
         links: [
-            {   name: "article",
+            {
+                name: "article",
                 url: "https://medium.com/mlearning-ai/workforce-planning-optimization-using-python-69af0ef9011a",
                 icon: <SiMedium/>
             }

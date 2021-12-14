@@ -9,7 +9,7 @@ const DynamicTyping = (props) => {
                 strings: props.titles,
                 autoStart: true,
                 loop: true,
-                deleteSpeed: 60
+                deleteSpeed: 80
             }}
         />
     );

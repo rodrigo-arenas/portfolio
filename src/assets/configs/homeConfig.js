@@ -7,17 +7,19 @@ const homeConfig = {
 
     greeting:
         <h1 className="heading">
-            Hi!, I'm <strong className="main-name"> Rodrigo Arenas</strong>
+            Hi!, I'm <strong classNalme="main-name"> Rodrigo Arenas</strong>
         </h1>,
     titles: [
         "Data Scientist",
         "Machine Learning Specialist",
         "Open Source Contributor",
-        "Backend Developer"
+        "Backend Developer",
+        "Colombian"
     ],
     about: {
         start: "I've been working for over six years on data science projects. " +
-            "I'm excited by learning new things and contributing to the data science community.",
+            "I'm excited by learning new things, contributing to the data science community," +
+            " and spreading the word of data!",
         exit: "I'm fluent at Python, SQL databases, BI tools, and more, " +
             "with a deep interest in machine learning."
     },
