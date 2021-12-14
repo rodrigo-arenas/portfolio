@@ -1,8 +1,8 @@
 
 <h2>
   Personal Portfolio website<br/>
-  <a href="https://rodrigo.arenas.github.io/portfolio/" target="_blank">
-        https://rodrigo.arenas.github.io/portfolio</a>
+  <a href="https://rodrigo-arenas.github.io/portfolio" target="_blank">
+        https://rodrigo-arenas.github.io/portfolio</a>
 </h2>
 
 
