@@ -51,7 +51,7 @@ Here, you can modify all the values but keep the key's names, structure and clas
 you can also add new values to the configs containing a list.
 
 
-### Configs:
+### Images:
 
 This folder is meant to keep images that are displayed over some routes, like the blogs and projects.
 For example, inside the projectsConfig.js file, the list of projects has a property called "image":
