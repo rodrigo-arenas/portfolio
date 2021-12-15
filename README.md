@@ -1,7 +1,7 @@
 
 <h2>
   Personal Portfolio
-  <a href="https://rodrigo-arenas.github.io/portfolio" target="_blank">website</a>
+  <a href="https://rodrigo-arenas.github.io/portfolio" target="_blank">Website</a>
 </h2>
 
 This is my website to resume my work as a data scientist.
