@@ -9,7 +9,7 @@ import {BsMedium} from "react-icons/bs";
 
 
 
-const generalConfig = {
+const menuConfig = {
 
     sidebarData: [
         {
@@ -44,4 +44,4 @@ const generalConfig = {
 
 }
 
-export default generalConfig
+export default menuConfig
