@@ -4,6 +4,20 @@ import fastapiSklearn from "../images/fastapi_sklearn.png"
 
 const blogConfig = [
     {
+        id: "blog-6",
+        title: "Evolutionary Feature Selection for Machine Learning",
+        links: [
+            {
+                name: "article",
+                url: "https://rodrigo-arenas.medium.com/7f61af2a8c12",
+                icon: <SiMedium/>
+            }
+        ],
+        image: "https://miro.medium.com/max/1400/1*hgFe2YFnwzt_K2TfE7aSrQ.jpeg",
+        description: "Learn how to make feature selection for machine learning algorithms using evolutionary models.",
+        target: "_blank"
+    },
+    {
         id: "blog-5",
         title: "Real-time anomaly detection with Apache Kafka and Python",
         links: [
