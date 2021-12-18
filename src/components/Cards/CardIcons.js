@@ -5,7 +5,7 @@ const CardIcons = (props) => {
 
         <ul className={"card__footer"}>
             {props.item.links.map((link) => (
-                <li key={props.item.id + link.name}>
+                <li key={props.item.id + link.name} title={link.name}>
                     <a className={"card__btn"}
                        href={link.url}
                        target={props.item.target}

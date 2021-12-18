@@ -9,7 +9,7 @@ const blogConfig = [
         links: [
             {
                 name: "article",
-                url: "https://rodrigo-arenas.medium.com/7f61af2a8c12",
+                url: "https://towardsdatascience.com/evolutionary-feature-selection-for-machine-learning-7f61af2a8c12",
                 icon: <SiMedium/>
             }
         ],

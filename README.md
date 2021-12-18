@@ -62,3 +62,9 @@ You can set any valid href for the `<a/>` tag as an image URL or, like in the ab
 an image from the `assets/images` folder.
 
 ![projects_images](projects_images.png)
+
+
+### Set Google Analytics track (Optional):
+
+Take the `.env.example` file, put your tracking id in the 
+variable `REACT_APP_TRACKING_ID` and rename the file to `.env`

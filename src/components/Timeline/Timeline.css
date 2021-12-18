@@ -4,9 +4,6 @@
     text-align: center;
 }
 
-h3 {
-    padding-top: 0.25em;
-}
 
 .vertical-timeline-element-title {
     text-align: center;
@@ -29,10 +26,13 @@ h3 {
 .vertical-timeline-element-icon {
     background: #263238;
     color: #fff;
-    text-align: left;
 }
 
 .vertical-timeline-element-content-arrow {
     border-right: 7px solid  #F6F6F6;
     border-right: 7px solid  #F6F6F6;
+}
+
+.vertical-timeline-element-date {
+    color: #263238;
 }

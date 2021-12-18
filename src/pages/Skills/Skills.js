@@ -10,19 +10,17 @@ const Skills = () => {
                 <div className="skills-div">
                     <h1 className="main-skills-h1">
                         <span className="main-skills"><strong>Main Skills & Tools</strong></span>
-
                     </h1>
-                    <AttentionSeeker effect={"flash"}>
+                    <AttentionSeeker effect={"bounce"}>
                         <div className="main-skills">
-
                             <SkillsItems config={skillsConfig.mainSkills}/>
-
                         </div>
                     </AttentionSeeker>
+
                     <h1 className="complementary-skills-h1">
                         <span className="complementary-skills"><strong>Complementary Skills & Tools</strong></span>
                     </h1>
-                    <AttentionSeeker effect={"flash"}>
+                    <AttentionSeeker effect={"bounce"}>
                         <div className="complementary-skills">
                             <SkillsItems config={skillsConfig.complementarySkills}/>
                         </div>

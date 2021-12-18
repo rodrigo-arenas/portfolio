@@ -1,7 +1,7 @@
 {
   "name": "portfolio",
   "version": "0.1.0",
-  "homepage":"https://rodrigo-arenas.github.io/portfolio",
+  "homepage": "https://rodrigo-arenas.github.io/portfolio",
   "private": true,
   "dependencies": {
     "@iconify/iconify": "^2.1.0",
@@ -13,6 +13,7 @@
     "react-awesome-reveal": "^3.8.1",
     "react-bootstrap": "^2.0.3",
     "react-dom": "^17.0.2",
+    "react-ga": "^3.3.0",
     "react-icons": "^4.3.1",
     "react-router-dom": "^6.0.2",
     "react-scripts": "4.0.3",

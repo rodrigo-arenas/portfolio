@@ -1,4 +1,5 @@
 import {BrowserRouter as Router, Routes, Route} from "react-router-dom";
+import ReactGA from 'react-ga';
 import NavBar from "./components/NavBar/NavBar";
 import Home from "./pages/Home/Home";
 import Projects from "./pages/Projects";
@@ -8,6 +9,12 @@ import ScrollToTop from "./components/ScrollToTop";
 import Footer from "./components/Footer/Footer";
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
+
+
+if (typeof process.env.REACT_APP_TRACKING_ID !== 'undefined') {
+    ReactGA.initialize(process.env.REACT_APP_TRACKING_ID)
+}
+
 
 function App() {
     return (
