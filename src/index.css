@@ -7,6 +7,11 @@ body {
     background-color: #99A799;
 }
 
+.about-card {
+    max-width: 1200px;
+    width: 90%;
+}
+
 @media screen and (max-width: 499px) {
     html {
         font-size: 0.8em;
