@@ -36,6 +36,7 @@
     background-color: transparent !important;
     border: none transparent !important;
     outline: 0 !important;
+    font-size: 2rem;
 }
 .navbar-toggler:focus,
 .navbar-toggler:active {
