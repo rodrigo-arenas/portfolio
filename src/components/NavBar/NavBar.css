@@ -32,12 +32,12 @@
 }
 
 .navbar-toggler {
-    padding: 0.25rem 1.5rem !important;
+    padding: 0.5rem 1.5rem !important;
     position: relative !important;
     background-color: transparent !important;
     border: none transparent !important;
     outline: 0 !important;
-    font-size: 2rem;
+    font-size: 2rem !important;
 }
 .navbar-toggler:focus,
 .navbar-toggler:active {
