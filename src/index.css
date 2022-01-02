@@ -6,3 +6,25 @@ body {
     -moz-osx-font-smoothing: grayscale;
     background-color: #99A799;
 }
+
+.about-card {
+    max-width: 1200px;
+    width: 90%;
+}
+
+@media screen and (max-width: 499px) {
+    html {
+        font-size: 0.8em;
+    }
+
+    .heading {
+        padding: 2rem 0;
+        text-align: center;
+        padding-bottom: 1rem;
+    }
+
+    .Typewriter {
+        font-size: 0.6rem;
+        margin-bottom: 2rem;
+    }
+}

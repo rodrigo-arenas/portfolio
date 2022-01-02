@@ -1,5 +1,4 @@
-.sec-skills-icons,
-.skills-icons {
+.skill-icon {
     bottom: 0 !important;
     color: #f5f5f5;
     list-style-type: none;
@@ -16,7 +15,7 @@
     border-radius: 25px;
 }
 
-.sec-skills-icons {
+.sec-skill-icon {
     font-size: 1em;
     text-align: center;
 }
@@ -28,7 +27,7 @@
 
 
 .main-skills-h1,
-.complementary-skills-h1 {
+.complementary-skill-h1 {
     width: 100%;
     overflow: hidden;
     vertical-align:middle;
@@ -37,10 +36,11 @@
     padding: 5px;
 }
 
-.skills-icons-ul {
+.skill-icons {
     padding: 10px 0 10px 0;
 }
 
-.pskills-icons {
+.skill-icon-text {
     margin: 0;
+    margin-top: 0.6rem;;
 }
