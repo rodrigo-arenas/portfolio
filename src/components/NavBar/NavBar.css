@@ -10,11 +10,12 @@
     text-align: left;
     width: 100%;
     position: sticky;
-
+    padding: 0 !important;
 }
 
 .navbar-nav .nav-link {
-    color: #f5f5f5 !important
+    color: #f5f5f5 !important;
+    padding: 1rem 1rem !important;
 }
 
 .navbar-nav .nav-item {
