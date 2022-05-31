@@ -1,4 +1,5 @@
 import "./CardItem.css"
+import React from 'react'
 
 const CardIcons = (props) => {
     return (

@@ -1,6 +1,8 @@
 import Badge from "react-bootstrap/Badge";
 import "./Tags.css"
 
+import React from 'react'
+
 const Tags = (props) => {
     return (
         <div className={"tags"}>

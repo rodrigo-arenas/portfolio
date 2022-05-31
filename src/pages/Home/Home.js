@@ -1,3 +1,4 @@
+import React from 'react'
 import {Container, Row, Col} from "react-bootstrap";
 import DynamicTyping from "../../components/DynamicTyping";
 import About from "../../components/About";

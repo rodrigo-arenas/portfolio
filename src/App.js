@@ -10,6 +10,7 @@ import Footer from "./components/Footer/Footer";
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
+import React from 'react'
 
 if (typeof process.env.REACT_APP_TRACKING_ID !== 'undefined') {
     ReactGA.initialize(process.env.REACT_APP_TRACKING_ID)

@@ -7,6 +7,8 @@ import kafkaMl from "../images/kafkaml.png"
 import scikitPipes from "../images/scikit_pipes.png"
 import portfolio from "../images/portfolio.png"
 
+import React from 'react'
+
 const projectConfig = [
     {
         id: "project-4",
@@ -16,25 +18,21 @@ const projectConfig = [
                 name: "repo",
                 url: "https://github.com/rodrigo-arenas/Sklearn-genetic-opt",
                 icon: <AiFillGithub/>,
-
             },
             {
                 name: "fork",
                 url: "https://github.com/rodrigo-arenas/Sklearn-genetic-opt/fork",
                 icon: <BiGitRepoForked/>,
-
             },
             {
                 name: "subscription",
                 url: "https://github.com/rodrigo-arenas/Sklearn-genetic-opt/subscription",
                 icon: <AiFillEye/>,
-
             },
             {
                 name: "docs",
                 url: "https://sklearn-genetic-opt.readthedocs.io/en/stable/",
                 icon: <ImBook/>,
-
             }
         ],
         image: sklearnGenetic,
@@ -107,6 +105,11 @@ const projectConfig = [
                 name: "subscription",
                 url: "https://github.com/rodrigo-arenas/pyworkforce/subscription",
                 icon: <AiFillEye/>
+            },
+            {
+                name: "docs",
+                url: "https://pyworkforce.readthedocs.io/en/stable/",
+                icon: <ImBook/>,
             }
         ],
         image: "https://miro.medium.com/max/1400/1*UDnhOFK35IbAPx15wkMgVg.jpeg",

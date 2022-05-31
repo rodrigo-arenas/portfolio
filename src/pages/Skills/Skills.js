@@ -1,7 +1,9 @@
+import React from 'react'
 import {AttentionSeeker} from "react-awesome-reveal";
 import SkillsItems from "./SkillsItems";
 import skillsConfig from "../../assets/configs/skillsConfig";
 import "./Skills.css"
+
 
 const Skills = () => {
     return (

@@ -1,3 +1,4 @@
+import React from 'react'
 import CardIcons from "./CardIcons";
 import "./CardItem.css"
 

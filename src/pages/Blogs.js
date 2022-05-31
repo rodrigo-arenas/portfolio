@@ -1,6 +1,7 @@
 import CardItem from "../components/Cards/CardItem";
 import "../components/Cards/CardItem.css";
 import blogConfig from "../assets/configs/blogConfig"
+import React from 'react'
 
 const Blogs = () => {
     return (
