@@ -1,28 +1,20 @@
 {
-  "files": {
-    "main.css": "/portfolio/static/css/main.96042ac5.chunk.css",
-    "main.js": "/portfolio/static/js/main.e1348efa.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.e1348efa.chunk.js.map",
-    "runtime-main.js": "/portfolio/static/js/runtime-main.0bf68c44.js",
-    "runtime-main.js.map": "/portfolio/static/js/runtime-main.0bf68c44.js.map",
-    "static/css/2.74195455.chunk.css": "/portfolio/static/css/2.74195455.chunk.css",
-    "static/js/2.de0e3985.chunk.js": "/portfolio/static/js/2.de0e3985.chunk.js",
-    "static/js/2.de0e3985.chunk.js.map": "/portfolio/static/js/2.de0e3985.chunk.js.map",
-    "index.html": "/portfolio/index.html",
-    "static/css/2.74195455.chunk.css.map": "/portfolio/static/css/2.74195455.chunk.css.map",
-    "static/css/main.96042ac5.chunk.css.map": "/portfolio/static/css/main.96042ac5.chunk.css.map",
-    "static/js/2.de0e3985.chunk.js.LICENSE.txt": "/portfolio/static/js/2.de0e3985.chunk.js.LICENSE.txt",
-    "static/media/fastapi_sklearn.0bfaec4c.png": "/portfolio/static/media/fastapi_sklearn.0bfaec4c.png",
-    "static/media/kafkaml.5ee10c15.png": "/portfolio/static/media/kafkaml.5ee10c15.png",
-    "static/media/portfolio.565c9c29.png": "/portfolio/static/media/portfolio.565c9c29.png",
-    "static/media/scikit_pipes.9e05aff9.png": "/portfolio/static/media/scikit_pipes.9e05aff9.png",
-    "static/media/sklearn_genetic_opt.15b892ad.png": "/portfolio/static/media/sklearn_genetic_opt.15b892ad.png"
-  },
-  "entrypoints": [
-    "static/js/runtime-main.0bf68c44.js",
-    "static/css/2.74195455.chunk.css",
-    "static/js/2.de0e3985.chunk.js",
-    "static/css/main.96042ac5.chunk.css",
-    "static/js/main.e1348efa.chunk.js"
-  ]
+  "main.css": "/portfolio/static/css/main.d507fa8c.chunk.css",
+  "main.js": "/portfolio/static/js/main.fd702e39.chunk.js",
+  "main.js.map": "/portfolio/static/js/main.fd702e39.chunk.js.map",
+  "static/css/1.eefa6ff0.chunk.css": "/portfolio/static/css/1.eefa6ff0.chunk.css",
+  "static/js/1.1c849c64.chunk.js": "/portfolio/static/js/1.1c849c64.chunk.js",
+  "static/js/1.1c849c64.chunk.js.map": "/portfolio/static/js/1.1c849c64.chunk.js.map",
+  "runtime~main.js": "/portfolio/static/js/runtime~main.ee2a1003.js",
+  "runtime~main.js.map": "/portfolio/static/js/runtime~main.ee2a1003.js.map",
+  "static/media/sklearn_genetic_opt.png": "/portfolio/static/media/sklearn_genetic_opt.23273bc8.png",
+  "static/media/kafkaml.png": "/portfolio/static/media/kafkaml.9c0f9867.png",
+  "static/media/scikit_pipes.png": "/portfolio/static/media/scikit_pipes.8ba027d9.png",
+  "static/media/portfolio.png": "/portfolio/static/media/portfolio.4b632d51.png",
+  "static/media/fastapi_sklearn.png": "/portfolio/static/media/fastapi_sklearn.f7d742fc.png",
+  "static/css/1.eefa6ff0.chunk.css.map": "/portfolio/static/css/1.eefa6ff0.chunk.css.map",
+  "static/css/main.d507fa8c.chunk.css.map": "/portfolio/static/css/main.d507fa8c.chunk.css.map",
+  "index.html": "/portfolio/index.html",
+  "precache-manifest.099ecc384446608c60048b06b4f37e16.js": "/portfolio/precache-manifest.099ecc384446608c60048b06b4f37e16.js",
+  "service-worker.js": "/portfolio/service-worker.js"
 }
