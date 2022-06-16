@@ -5,6 +5,20 @@ import fastapiSklearn from "../images/fastapi_sklearn.png"
 
 const blogConfig = [
     {
+        id: "blog-7",
+        title: "Adaptive Parameters Methods for Machine Learning",
+        links: [
+            {
+                name: "article",
+                url: "https://towardsdatascience.com/adaptive-parameters-methods-for-machine-learning-6f7101a9a71",
+                icon: <SiMedium/>
+            }
+        ],
+        image: "https://miro.medium.com/max/700/1*DeZYSLcMdF58BeqemGhUhg.jpeg",
+        description: "Let's explore some methods to adapt your parameters over time.",
+        target: "_blank"
+    },
+    {
         id: "blog-6",
         title: "Evolutionary Feature Selection for Machine Learning",
         links: [
@@ -110,7 +124,7 @@ const blogConfig = [
         links: [
             {
                 name: "article",
-                url: "https://medium.com/mlearning-ai/workforce-planning-optimization-using-python-69af0ef9011a",
+                url: "https://towardsdatascience.com/workforce-planning-optimization-using-python-69af0ef9011a",
                 icon: <SiMedium/>
             }
         ],
