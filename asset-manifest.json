@@ -1,7 +1,7 @@
 {
-  "main.css": "/portfolio/static/css/main.d507fa8c.chunk.css",
-  "main.js": "/portfolio/static/js/main.fd702e39.chunk.js",
-  "main.js.map": "/portfolio/static/js/main.fd702e39.chunk.js.map",
+  "main.css": "/portfolio/static/css/main.eb7b90d8.chunk.css",
+  "main.js": "/portfolio/static/js/main.d4e61e5a.chunk.js",
+  "main.js.map": "/portfolio/static/js/main.d4e61e5a.chunk.js.map",
   "static/css/1.eefa6ff0.chunk.css": "/portfolio/static/css/1.eefa6ff0.chunk.css",
   "static/js/1.1c849c64.chunk.js": "/portfolio/static/js/1.1c849c64.chunk.js",
   "static/js/1.1c849c64.chunk.js.map": "/portfolio/static/js/1.1c849c64.chunk.js.map",
@@ -12,9 +12,9 @@
   "static/media/scikit_pipes.png": "/portfolio/static/media/scikit_pipes.8ba027d9.png",
   "static/media/portfolio.png": "/portfolio/static/media/portfolio.4b632d51.png",
   "static/media/fastapi_sklearn.png": "/portfolio/static/media/fastapi_sklearn.f7d742fc.png",
-  "static/css/main.d507fa8c.chunk.css.map": "/portfolio/static/css/main.d507fa8c.chunk.css.map",
+  "static/css/main.eb7b90d8.chunk.css.map": "/portfolio/static/css/main.eb7b90d8.chunk.css.map",
   "static/css/1.eefa6ff0.chunk.css.map": "/portfolio/static/css/1.eefa6ff0.chunk.css.map",
   "index.html": "/portfolio/index.html",
-  "precache-manifest.099ecc384446608c60048b06b4f37e16.js": "/portfolio/precache-manifest.099ecc384446608c60048b06b4f37e16.js",
+  "precache-manifest.a45fef248263a79c5faf13788868f1ce.js": "/portfolio/precache-manifest.a45fef248263a79c5faf13788868f1ce.js",
   "service-worker.js": "/portfolio/service-worker.js"
 }
