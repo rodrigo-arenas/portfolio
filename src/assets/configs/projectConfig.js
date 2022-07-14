@@ -3,6 +3,7 @@ import {AiFillGithub, AiFillEye} from "react-icons/ai";
 import {ImBook} from "react-icons/im";
 
 import sklearnGenetic from "../images/sklearn_genetic_opt.png"
+import graphEmbeddings from "../images/graph_embeddings.png"
 import kafkaMl from "../images/kafkaml.png"
 import scikitPipes from "../images/scikit_pipes.png"
 import portfolio from "../images/portfolio.png"
@@ -11,7 +12,7 @@ import React from 'react'
 
 const projectConfig = [
     {
-        id: "project-4",
+        id: "project-5",
         title: "Sklearn Genetic Opt",
         links: [
             {
@@ -40,6 +41,35 @@ const projectConfig = [
         target: "_blank"
     },
     {
+        id: "project-4",
+        title: "Graphs Embeddings",
+        links: [
+            {
+                name: "repo",
+                url: "https://github.com/rodrigo-arenas/Graph-Embeddings",
+                icon: <AiFillGithub/>,
+            },
+            {
+                name: "fork",
+                url: "https://github.com/rodrigo-arenas/Graph-Embeddings/fork",
+                icon: <BiGitRepoForked/>,
+            },
+            {
+                name: "subscription",
+                url: "https://github.com/rodrigo-arenas/Graph-Embeddings/subscription",
+                icon: <AiFillEye/>,
+            },
+            {
+                name: "docs",
+                url: "https://graph-embeddings.readthedocs.io/",
+                icon: <ImBook/>,
+            }
+        ],
+        image: graphEmbeddings,
+        description: "Graph embeddings for downstream tasks.",
+        target: "_blank"
+    },
+    {
         id: "project-3",
         title: "Kafkaml Anomalies",
         links: [
@@ -65,30 +95,6 @@ const projectConfig = [
     },
     {
         id: "project-2",
-        title: "Portfolio Web",
-        links: [
-            {
-                name: "repo",
-                url: "https://github.com/rodrigo-arenas/portfolio",
-                icon: <AiFillGithub/>
-            },
-            {
-                name: "fork",
-                url: "https://github.com/rodrigo-arenas/portfolio/fork",
-                icon: <BiGitRepoForked/>
-            },
-            {
-                name: "subscription",
-                url: "https://github.com/rodrigo-arenas/portfolio/subscription",
-                icon: <AiFillEye/>
-            }
-        ],
-        image: portfolio,
-        description: "Source code of my current portfolio web page as data scientist.",
-        target: "_blank"
-    },
-    {
-        id: "project-1",
         title: "Pyworkforce",
         links: [
             {
@@ -113,8 +119,31 @@ const projectConfig = [
             }
         ],
         image: "https://miro.medium.com/max/1400/1*UDnhOFK35IbAPx15wkMgVg.jpeg",
-        description: "Common tools for workforce management, schedule and optimization problems, " +
-            "built on top of packages like google's or-tools and custom modules.",
+        description: "Standard tools for workforce management, queuing, scheduling, rostering and optimization problems.",
+        target: "_blank"
+    },
+    {
+        id: "project-1",
+        title: "Portfolio Web",
+        links: [
+            {
+                name: "repo",
+                url: "https://github.com/rodrigo-arenas/portfolio",
+                icon: <AiFillGithub/>
+            },
+            {
+                name: "fork",
+                url: "https://github.com/rodrigo-arenas/portfolio/fork",
+                icon: <BiGitRepoForked/>
+            },
+            {
+                name: "subscription",
+                url: "https://github.com/rodrigo-arenas/portfolio/subscription",
+                icon: <AiFillEye/>
+            }
+        ],
+        image: portfolio,
+        description: "Source code of my current portfolio web page as data scientist.",
         target: "_blank"
     },
     {
