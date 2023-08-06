@@ -5,7 +5,6 @@ import {ImBook} from "react-icons/im";
 import sklearnGenetic from "../images/sklearn_genetic_opt.png"
 import graphEmbeddings from "../images/graph_embeddings.png"
 import kafkaMl from "../images/kafkaml.png"
-import scikitPipes from "../images/scikit_pipes.png"
 import portfolio from "../images/portfolio.png"
 
 import React from 'react'
@@ -144,30 +143,6 @@ const projectConfig = [
         ],
         image: portfolio,
         description: "Source code of my current portfolio web page as data scientist.",
-        target: "_blank"
-    },
-    {
-        id: "project-0",
-        title: "Scikit-Pipes",
-        links: [
-            {
-                name: "repo",
-                url: "https://github.com/rodrigo-arenas/scikit-pipes",
-                icon: <AiFillGithub/>
-            },
-            {
-                name: "fork",
-                url: "https://github.com/rodrigo-arenas/scikit-pipes/fork",
-                icon: <BiGitRepoForked/>
-            },
-            {
-                name: "subscription",
-                url: "https://github.com/rodrigo-arenas/scikit-pipes/subscription",
-                icon: <AiFillEye/>
-            }
-        ],
-        image: scikitPipes,
-        description: "Scikit-Learn practical pre-defined Pipelines Hub.",
         target: "_blank"
     }
 ]
