@@ -12,41 +12,43 @@ const homeConfig = {
         </h1>,
     titles: [
         "Data Scientist",
-        "Machine Learning Specialist",
-        "Open Source Contributor",
+        "Machine Learning Enthusiast",
         "Python Backend Developer",
     ],
     about: {
-        start: "I've been working for over six years on data science projects. " +
-            "I'm excited by learning new things, contributing to the data science community," +
-            " and spreading the word of data!",
-        exit: "I'm fluent at Python, SQL databases, BI tools, and more, " +
+        start: "I'm a passionate Data Scientist with over 4 years of experience working in the tech industry." +
+            " Having worked with internationl clients, I possess strong communication," +
+            " problem-solving, time management and leadereship skills." + 
+            " What sets me apart is my relentless pursuit of innovation and my entrepreneurial mindset." +
+            " I thrive on disrupting conventional methodologies and crafting data-driven solutions that drive tangible business impact." + 
+            " My ability to communicate complex technical concepts and tell compelling data stories makes me a valuable asset in any team.",
+        exit: " I'm fluent at Python, SQL, BI tools, and more, " +
             "with a deep interest in machine learning."
     },
     workTimeline: [
         {
             id: "work-3",
-            title: "Sr Data Scientist",
-            company: "Globant",
-            description: "Build AutoML models and make them available to non-technical " +
-                "users from a graphical interface.",
-            date: "2021-present",
+            title: "Data Scientist",
+            company: "Amex (On-Site)",
+            description: "Automated business processes using ML, built NLP based python applications," +
+                " recognized for taking POC projects to production at a fast pace.",
+            date: "2020-2022",
             icon: <DiCodeigniter/>,
-            tags: ["ml", "automl", "python", "docker", "redshift", "superset"]
+            tags: ["ml", "python", "docker", "NLP", "SQL","automl"]
         },
         {
             id: "work-2",
-            title: "BI Manager",
-            company: "Rappi",
-            description: "Leading a team of analysts and data scientists to execute different projects, " +
-                "including the construction of ETLs, data lakes, data warehouses, and machine learning models.",
-            date: "2019-2021",
+            title: "Data Scientist",
+            company: "IBM India Pvt. Ltd.",
+            description: "Kick-started career in Data Science, developed core skills like Data preparation, pre-processing, " +
+                "Exploratory Data Analysis, Data Visualization, Predictive Modelling, and building a full ML pipeline.",
+            date: "2019-2022",
             icon: <FaMobileAlt/>,
             tags: ["ml", "airflow", "python", "docker", "snowflake", "postgres", "azure"]
         },
         {
             id: "work-1",
-            title: "CRM Analytics Coordinator",
+            title: "Data Science Internship",
             company: "Avianca",
             description: "Tech leader of a BI, Data Science and DBA team. " +
                 "Build forecast models, data warehouse and Power BI dashboards.",
