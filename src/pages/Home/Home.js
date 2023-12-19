@@ -12,7 +12,7 @@ const Home = () => {
         <section>
             <Container fluid className="home-content" id="home">
                 <Row>
-                    <Col className="home-header">
+                    <Col className="home-header" style={{textAlign: "center"}}>
                         <div>
                             {homeConfig.greeting}
                         </div>

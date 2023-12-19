@@ -22,6 +22,7 @@ function App() {
         <Router>
             <div className="App">
                 <NavBar/>
+                <br />
                 <ScrollToTop/>
                 <Routes>
                     <Route path={"/portfolio"} exact element={<Home/>}/>

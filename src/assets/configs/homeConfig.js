@@ -11,11 +11,11 @@ const homeConfig = {
             Hi! I'm <strong className="main-name"> Rodrigo Arenas</strong>
         </h1>,
     titles: [
-        "Data Scientist",
-        "Machine Learning Specialist",
-        "Open Source Contributor",
-        "Backend Developer",
-        "Colombian"
+        "A Data Scientist",
+        "A Machine Learning Specialist",
+        "An Open Source Contributor",
+        "A Backend Developer",
+        "A Colombian"
     ],
     about: {
         start: "I've been working for over six years on data science projects. " +
