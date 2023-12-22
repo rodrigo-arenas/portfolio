@@ -9,6 +9,7 @@
     text-align: center;
     margin-bottom: 0.7rem;
     font-size: 30px !important;
+    color: blueviolet;
 }
 
 .vertical-timeline-element-content {
@@ -34,6 +35,8 @@
 }
 
 .vertical-timeline-element-date {
-    color: #263238;
+    color: rgb(0, 0, 0);
     margin: 0 20px;
+    font-weight:bolder !important;
+    font-size: large;
 }
