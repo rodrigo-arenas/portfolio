@@ -1,0 +1,66 @@
+/**
+ * dark-mode styles 
+ * 
+ */
+
+.darkmode>h2 {
+    color: #3b3b3b;
+    font-size: 24px;
+    line-height: 33px;
+    text-align: left;
+    font-family: Source Sans Pro, Georgia, sans-serif;
+    font-weight: 700;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.darkmode-wrapper {
+    width: 50%;
+    margin: auto;
+    padding: 10%;
+    margin-top: 17px;
+}
+
+.dark-checkbox {
+    opacity: 0;
+    position: absolute;
+}
+
+.dark-label {
+    width: 45px;
+    height: 25px;
+    background-color: #111;
+    display: flex;
+    border-radius: 50px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+    position: relative;
+    transform: scale(1.5);
+    border: 1px solid #66806a;
+}
+
+.dark-mode-ball {
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    border-radius: 50%;
+    transition: transform 0.2s linear;
+    border: 1px solid #66806a;
+}
+
+/*  target the elemenent after the label*/
+.dark-checkbox:checked+.dark-label .dark-mode-ball {
+    transform: translateX(24px);
+}
+
+.darkmode-moon {
+    color: pink;
+}
+
+.darkmode-sun {
+    color: yellow;
+}

@@ -9,6 +9,7 @@
     "@testing-library/react": "^11.2.7",
     "@testing-library/user-event": "^12.8.3",
     "bootstrap": "^5.1.3",
+    "darkreader": "^4.9.73",
     "react": "^17.0.2",
     "react-awesome-reveal": "^3.8.1",
     "react-bootstrap": "^2.0.3",
