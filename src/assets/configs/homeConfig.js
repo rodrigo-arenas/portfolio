@@ -3,6 +3,7 @@ import {BsClipboardData} from "react-icons/bs";
 import {DiCodeigniter} from "react-icons/di";
 import {GiCommercialAirplane} from "react-icons/gi";
 import {FaMobileAlt} from "react-icons/fa";
+import { BiRocket } from "react-icons/bi";
 
 const homeConfig = {
 
@@ -18,7 +19,7 @@ const homeConfig = {
         "A Colombian"
     ],
     about: {
-        start: "I've been working for over six years on data science projects. " +
+        start: "I've been working for over seven years on data science projects. " +
             "I'm excited by learning new things, contributing to the data science community," +
             " and spreading the word of data!",
         exit: "I'm fluent at Python, SQL databases, BI tools, and more, " +
@@ -26,12 +27,21 @@ const homeConfig = {
     },
     workTimeline: [
         {
+            id: "work-4",
+            title: "Sr ML Engineer",
+            company: "EPAM",
+            description: "Working to build scalable ML solutions, LLM's, and RAG architectures.",
+            date: "2023-Present",
+            icon: <BiRocket/>,
+            tags: ["ml", "mlops", "python", "azure", "llm", "automl"]
+        },
+        {
             id: "work-3",
             title: "Sr Data Scientist",
             company: "Globant",
             description: "Build AutoML models and make them available to non-technical " +
                 "users from a graphical interface.",
-            date: "2021-present",
+            date: "2021-2023",
             icon: <DiCodeigniter/>,
             tags: ["ml", "automl", "python", "docker", "redshift", "superset"]
         },
