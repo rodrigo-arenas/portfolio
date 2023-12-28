@@ -11,23 +11,27 @@ const Timeline = (props) => {
   const { items } = props || {};
   return (
     <VerticalTimeline>
-      {items.map((item) => (
-        <VerticalTimelineElement
-          className="vertical-timeline-element--work"
-          date={item.date}
-          icon={item.icon}
-          key={item.id}
-        >
-          <h2 className="vertical-timeline-element-title">
-            <strong>{item.title}</strong>
-          </h2>
-          <h4 className="vertical-timeline-element-subtitle">{item.company}</h4>
-          <p className={"vertical-timeline-element-description"}>
-            {item.description}
-          </p>
-          <Tags id={item.id} tags={item.tags}></Tags>
-        </VerticalTimelineElement>
-      ))}
+      {items.map((item) => {
+        const { id, date, icon, title, company, description, tags } =
+          item || {};
+        return (
+          <VerticalTimelineElement
+            className="vertical-timeline-element--work"
+            date={date}
+            icon={icon}
+            key={id}
+          >
+            <h2 className="vertical-timeline-element-title">
+              <strong>{title}</strong>
+            </h2>
+            <h4 className="vertical-timeline-element-subtitle">{company}</h4>
+            <p className="vertical-timeline-element-description">
+              {description}
+            </p>
+            <Tags id={id} tags={tags}></Tags>
+          </VerticalTimelineElement>
+        );
+      })}
     </VerticalTimeline>
   );
 };
