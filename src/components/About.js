@@ -4,9 +4,24 @@ const About = (props) => {
   const { about } = props || {};
   const { start, exit } = about || {};
 
+  const aboutCardStyle = {
+    backgroundColor: "#263238",
+  };
+
+  const cardHeaderStyle = {};
+
+  const cardBodyStyle = {
+    height: "auto",
+    fontSize: "132%",
+    lineHeight: "150%",
+    backgroundColor: "#F6F6F6",
+    color: "#8e8d8a",
+    padding: "2rem",
+  };
+
   return (
     <section id="about">
-      <div className="about-card" style={{ backgroundColor: "#263238" }}>
+      <div className="about-card" style={aboutCardStyle}>
         <div className="card-header">
           <span
             className="iconify"
@@ -28,14 +43,7 @@ const About = (props) => {
         </div>
         <div
           className="card-body font-trebuchet text-justify ml-3 mr-3"
-          style={{
-            height: "auto",
-            fontSize: "132%",
-            lineHeight: "150%",
-            backgroundColor: "#F6F6F6",
-            color: "#8e8d8a",
-            padding: "2rem",
-          }}
+          style={cardBodyStyle}
         >
           {start}
           <br />
