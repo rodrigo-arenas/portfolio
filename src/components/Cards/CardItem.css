@@ -24,8 +24,9 @@
 
 .card:hover {
     /* transform: scale(1.02) */
-    box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.15), 0 0.4em 1.25em 0 rgba(0, 0, 0, 0.05) !important;
+    box-shadow: 0 0.25em 0.5em 0.3rem rgb(233, 233, 184), 0 0.4em 1.25em 1rem rgba(0, 0, 0, 0.05) !important;
     top: -0.3rem;
+    transform: scaleZ(5px) scale(1.02);
 }
 
 .card__img {
@@ -47,6 +48,7 @@
     flex-grow: 1;
     height: fit-content;
 }
+
 
 .card__title {
     line-height: 1.8rem;
