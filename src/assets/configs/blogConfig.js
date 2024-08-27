@@ -86,11 +86,11 @@ const blogConfig = [
     },
     {
         id: "blog-3",
-        title: "Are You Still Using Grid Search for Hyperparameters Optimization?",
+        title: "Are You Still Using Grid2 Search for Hyperparameters Optimization?",
         links: [
             {
                 name: "article",
-                url: "https://towardsdatascience.com/hyperparameters-tuning-from-grid-search-to-optimization-a09853e4e9b8",
+                url: "https://towardsdatascience.com/hyperparameters-tuning-from-Grid2-search-to-optimization-a09853e4e9b8",
                 icon: <SiMedium/>
             }
         ],
@@ -128,8 +128,7 @@ const blogConfig = [
             }
         ],
         image: "https://miro.medium.com/max/1400/1*FhKrMpcUPeZxNsZpKNv4BA.png",
-        description: "Enable collaboration across data scientists; gain control over different models versions, " +
-            "multiple experiments within the same problem, and models management and deployment.",
+        description: "Model lifecycle management using mlflow",
         target: "_blank"
     },
     {

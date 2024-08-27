@@ -1,56 +1,32 @@
-import React from "react";
+import React from 'react';
+import { Card, CardHeader, CardContent, Typography, Box } from '@mui/material';
 
 const About = (props) => {
   const { about } = props || {};
   const { start, exit } = about || {};
 
-  const aboutCardStyle = {
-    backgroundColor: "#263238",
-  };
-
-  const cardHeaderStyle = {};
-
-  const cardBodyStyle = {
-    height: "auto",
-    fontSize: "132%",
-    lineHeight: "150%",
-    backgroundColor: "#F6F6F6",
-    color: "#8e8d8a",
-    padding: "2rem",
-  };
-
   return (
-    <section id="about">
-      <div className="about-card" style={aboutCardStyle}>
-        <div className="card-header">
-          <span
-            className="iconify"
-            data-icon="emojione:red-circle"
-            data-inline="false"
-          />{" "}
-          &nbsp;{" "}
-          <span
-            className="iconify"
-            data-icon="twemoji:yellow-circle"
-            data-inline="false"
-          />{" "}
-          &nbsp;{" "}
-          <span
-            className="iconify"
-            data-icon="twemoji:green-circle"
-            data-inline="false"
+      <Box id="about" sx={{ my: 4 }}>
+        <Card sx={{ backgroundColor: '#263238', color: '#f5f5f5' }}>
+          <CardHeader
+              avatar={
+                <Box sx={{ display: 'flex', alignItems: 'center' }}>
+                  <Box component="span" className="iconify" data-icon="emojione:red-circle" sx={{ mr: 1 }} />
+                  <Box component="span" className="iconify" data-icon="twemoji:yellow-circle" sx={{ mr: 1 }} />
+                  <Box component="span" className="iconify" data-icon="twemoji:green-circle" />
+                </Box>
+              }
           />
-        </div>
-        <div
-          className="card-body font-trebuchet text-justify ml-3 mr-3"
-          style={cardBodyStyle}
-        >
-          {start}
-          <br />
-          {exit}
-        </div>
-      </div>
-    </section>
+          <CardContent sx={{ fontSize: '132%', lineHeight: '150%', backgroundColor: '#F6F6F6', color: '#8e8d8a', padding: '2rem' }}>
+            <Typography variant="body1" paragraph>
+              {start}
+            </Typography>
+            <Typography variant="body1">
+              {exit}
+            </Typography>
+          </CardContent>
+        </Card>
+      </Box>
   );
 };
 
