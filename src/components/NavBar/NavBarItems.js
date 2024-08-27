@@ -1,28 +1,33 @@
-import React from "react";
-import Nav from "react-bootstrap/Nav";
-import { Link } from "react-router-dom";
-import "./NavBar.css";
-import menuConfig from "../../assets/configs/menuConfig";
-import GlobalDarkMode from "../DarkMode/GlobalDarkMode";
+import React from 'react';
+import { ListItem, ListItemIcon, ListItemText, Box } from '@mui/material';
+import { Link, useLocation } from 'react-router-dom';
+import menuConfig from '../../assets/configs/menuConfig';
 
-const NavBarItems = (props) => {
-  const { onSelection } = props || {};
+const NavBarItems = () => {
+    const location = useLocation();
 
-  return (
-    <Nav>
-      {menuConfig.sidebarData.map((item) => (
-        <Nav.Item key={item.id}>
-          <Nav.Link as={Link} to={item.path} onClick={onSelection}>
-            {item.icon}
-            <span>{item.title}</span>
-          </Nav.Link>
-        </Nav.Item>
-      ))}
-      <Nav.Item>
-        <GlobalDarkMode />
-      </Nav.Item>
-    </Nav>
-  );
+    return (
+        <Box sx={{ display: 'flex', justifyContent: 'flex-start', gap: 2 }}>
+            {menuConfig.sidebarData.map((item) => (
+                <ListItem
+                    button
+                    component={Link}
+                    to={item.path}
+                    key={item.id}
+                    sx={{
+                        color: location.pathname === item.path ? '#ffffff' : '#f5f5f5',
+                        display: 'flex',
+                        alignItems: 'center',
+                        padding: 2,
+                        borderBottom: location.pathname === item.path ? '3px solid #ffffff' : 'none',
+                    }}
+                >
+                    <ListItemIcon sx={{ color: '#f5f5f5', minWidth: 40 }}>{item.icon}</ListItemIcon>
+                    <ListItemText primary={item.title} />
+                </ListItem>
+            ))}
+        </Box>
+    );
 };
 
 export default NavBarItems;

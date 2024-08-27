@@ -1,36 +1,32 @@
-import React from 'react'
-import {AttentionSeeker} from "react-awesome-reveal";
-import SkillsItems from "./SkillsItems";
-import skillsConfig from "../../assets/configs/skillsConfig";
-import "./Skills.css"
-
+import React from 'react';
+import { Box, Typography } from '@mui/material';
+import SkillsItems from './SkillsItems';
+import skillsConfig from '../../assets/configs/skillsConfig';
 
 const Skills = () => {
     return (
         <section id="skills">
-            <div>
-                <div className="skills-div">
-                    <h1 className="main-skills-h1">
-                        <span className="main-skills"><strong>Main Skills & Tools</strong></span>
-                    </h1>
-                    <AttentionSeeker effect={"bounce"}>
-                        <div className="main-skills">
-                            <SkillsItems config={skillsConfig.mainSkills}/>
-                        </div>
-                    </AttentionSeeker>
+            <Box sx={{ textAlign: 'center', py: 4, backgroundColor: '#f0f0f0', borderRadius: '15px', boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.1)', mb: 6 }}>
+                <Typography variant="h3" component="h1" sx={{ color: '#263238', py: 2 }}>
+                    <strong>Main Skills & Tools</strong>
+                </Typography>
+                    <Box sx={{ display: 'flex', justifyContent: 'center', mt: 4 }}>
+                        <SkillsItems config={skillsConfig.mainSkills} />
+                    </Box>
 
-                    <h1 className="complementary-skills-h1">
-                        <span className="complementary-skills"><strong>Complementary Skills & Tools</strong></span>
-                    </h1>
-                    <AttentionSeeker effect={"bounce"}>
-                        <div className="complementary-skills">
-                            <SkillsItems config={skillsConfig.complementarySkills}/>
-                        </div>
-                    </AttentionSeeker>
-                </div>
-            </div>
+            </Box>
+
+            <Box sx={{ textAlign: 'center', py: 4, backgroundColor: '#f0f0f0', borderRadius: '15px', boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.1)' }}>
+                <Typography variant="h3" component="h1" sx={{ color: '#263238', py: 2 }}>
+                    <strong>Complementary Skills & Tools</strong>
+                </Typography>
+                    <Box sx={{ display: 'flex', justifyContent: 'center', mt: 4 }}>
+                        <SkillsItems config={skillsConfig.complementarySkills} />
+                    </Box>
+            </Box>
         </section>
-    )
-
+    );
 }
-export default Skills
+
+export default Skills;
+

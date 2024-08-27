@@ -19,7 +19,7 @@ const homeConfig = {
         "A Colombian"
     ],
     about: {
-        start: "I've been working for over seven years on data science projects. " +
+        start: "I've been working for over nine years on data science projects. " +
             "I'm excited by learning new things, contributing to the data science community," +
             " and spreading the word of data!",
         exit: "I'm fluent at Python, SQL databases, BI tools, and more, " +

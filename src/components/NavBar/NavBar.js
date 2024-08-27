@@ -1,34 +1,18 @@
-import React, {useState} from 'react';
-import Navbar from "react-bootstrap/Navbar";
-import Container from "react-bootstrap/Container";
-import {AiOutlineMenu} from "react-icons/ai"
-
-import NavBarItems from "./NavBarItems";
-import "./NavBar.css"
+import React from 'react';
+import { AppBar, Toolbar, Box } from '@mui/material';
+import NavBarItems from './NavBarItems';
 
 const NavBar = () => {
-
-    const [expanded, setExpanded] = useState(false);
-
-    const handleSelection = () => {
-        setExpanded(false)
-    }
-
-
     return (
-        <Navbar className={"navbar"} expand={'sm'} expanded={expanded}>
-            <Container fluid>
-                <Navbar.Toggle
-                    aria-controls='responsive-navbar-nav'
-                    onClick={() => setExpanded(expanded ? false : "expanded")}>
-                    <AiOutlineMenu className="toggle-icon"/>
-                </Navbar.Toggle>
-                <Navbar.Collapse id='responsive-navbar-nav'>
-                    <NavBarItems onSelection={handleSelection}/>
-                </Navbar.Collapse>
-            </Container>
-        </Navbar>)
-
+        <>
+            <AppBar position="fixed" sx={{ backgroundColor: '#263238', zIndex: 1400 }}>
+                <Toolbar sx={{ justifyContent: 'start' }}>
+                    <NavBarItems />
+                </Toolbar>
+            </AppBar>
+            <Box sx={{ height: 64 }} />
+        </>
+    );
 }
 
-export default NavBar
+export default NavBar;
