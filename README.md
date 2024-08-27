@@ -4,6 +4,8 @@
   <a href="https://rodrigo-arenas.github.io/portfolio" target="_blank">Website</a>
 </h2>
 
+**THIS LEGACY BRANCH CONTAINS THE OLD PAGE CODE IN CASE SOMEONE NEEDS IT, I WON'T KEEP ADDING FEATURES TO THIS BRANCH**
+
 This is my website to resume my work as a data scientist.
 The page mainly uses React and react-bootstrap and is inspired by open-source components.
 
