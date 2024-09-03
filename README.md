@@ -5,7 +5,7 @@
 </h2>
 
 This is my website to resume my work as a data scientist.
-The page mainly uses React and react-bootstrap and is inspired by open-source components.
+The page mainly uses React and MUI and is inspired by open-source components.
 
 Feel free to use this project as a template, and please give a small credit by linking back to this project.
 If you found this project helpful, consider giving it a 
@@ -42,18 +42,18 @@ it has two kinds:
 
 ### Configs:
 
-There is one configuration file per page or main component, for example if you want
+There is one configuration file per page or main component, for example, if you want
 to modify the footer icons and hyperlinks, go to the footerConfig.js file
 
 ![footer](src/assets/images/footer.png)
 
-Here, you can modify all the values but keep the key's names, structure and className the same; 
+Here, you can modify all the values but keep the key's names, structure, and className the same; 
 you can also add new values to the configs containing a list.
 
 
 ### Images:
 
-This folder is meant to keep images that are displayed over some routes, like the blogs and projects.
+This folder is meant to keep images displayed over some routes, like blogs and projects.
 For example, inside the projectsConfig.js file, the list of projects has a property called "image":
 
 ![projects_config.png](src/assets/images/projects_config.png)
@@ -66,5 +66,5 @@ an image from the `assets/images` folder.
 
 ### Set Google Analytics track (Optional):
 
-Take the `.env.example` file, put your tracking id in the 
-variable `REACT_APP_TRACKING_ID` and rename the file to `.env`
+Take the `.env.example` file, put your tracking ID in the 
+variable `REACT_APP_TRACKING_ID`, and rename the file to `.env`
