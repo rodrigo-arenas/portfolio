@@ -53,7 +53,7 @@ you can also add new values to the configs containing a list.
 
 ### Images:
 
-This folder is meant to keep images displayed over some routes, like blogs and projects.
+This folder keeps images displayed over some routes, like blogs and projects.
 For example, inside the projectsConfig.js file, the list of projects has a property called "image":
 
 ![projects_config.png](src/assets/images/projects_config.png)
@@ -68,3 +68,10 @@ an image from the `assets/images` folder.
 
 Take the `.env.example` file, put your tracking ID in the 
 variable `REACT_APP_TRACKING_ID`, and rename the file to `.env`
+
+## Troubleshooting
+
+If you see any error of unexpected token ">" while deploying, try to remove the following from the `package.json` file:
+```
+"homepage": "https://rodrigo-arenas.github.io/portfolio",
+```
