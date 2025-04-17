@@ -1,5 +1,5 @@
 {
-  "short_name": "Rodrigo Arenas | Portfolio",
+  "short_name": "Monique L. Boskett | Portfolio",
   "name": "Rodrigo Arenas Data Science Portfolio",
   "icons": [
     {
@@ -21,5 +21,5 @@
   "start_url": ".",
   "display": "standalone",
   "theme_color": "#000000",
-  "background_color": "#ffffff"
+  "background_color": "#dcc0e5"
 }
