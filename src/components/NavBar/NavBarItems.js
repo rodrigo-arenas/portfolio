@@ -1,13 +1,12 @@
 import React from 'react';
-import { ListItemButton, ListItemIcon, ListItemText, Box } from '@mui/material';
+import { ListItemButton, ListItemText, Box } from '@mui/material';
 import { Link, useLocation } from 'react-router-dom';
 import menuConfig from '../../assets/configs/menuConfig';
 
-const NavBarItems = () => {
+export default function NavBarItems() {
   const location = useLocation();
-
   return (
-    <Box sx={{ display: 'flex', justifyContent: 'flex-start', gap: 2 }}>
+    <Box sx={{ display: { xs: 'none', md: 'flex' }, gap: 0.5 }}>
       {menuConfig.sidebarData.map((item) => {
         const active = location.pathname === item.path;
         return (
@@ -15,21 +14,41 @@ const NavBarItems = () => {
             key={item.id}
             component={Link}
             to={item.path}
-            sx={{
-              color: active ? '#ffffff' : '#f5f5f5',
+            aria-current={active ? 'page' : undefined}
+            disableRipple
+            sx={(theme) => ({
+              px: 1.5,
+              py: 1,
+              borderRadius: 1.5,
               alignItems: 'center',
-              px: 2,
-              borderBottom: active ? '3px solid #ffffff' : 'none'
-            }}
+              transition: 'all .15s ease',
+              // Text colors: readable on light AppBar
+              color: active ? theme.palette.text.primary : theme.palette.text.secondary,
+              // Underline accent (active/hover)
+              borderBottom: '3px solid transparent',
+              '&:hover': {
+                color: theme.palette.text.primary,
+                backgroundColor: theme.palette.action.hover,
+                borderBottomColor: theme.palette.secondary.main,
+              },
+              ...(active && {
+                borderBottomColor: theme.palette.secondary.main,
+              }),
+            })}
           >
-            <ListItemIcon sx={{ color: '#f5f5f5', minWidth: 40 }}>{item.icon}</ListItemIcon>
-            <ListItemText primary={item.title} />
+            <ListItemText
+              primary={item.title}
+              primaryTypographyProps={{
+                fontWeight: active ? 800 : 600,
+                color: 'inherit',
+              }}
+            />
           </ListItemButton>
         );
       })}
     </Box>
   );
-};
+}
 
-export default NavBarItems;
+
 

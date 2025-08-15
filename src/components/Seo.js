@@ -1,7 +1,13 @@
-import React, { useEffect } from 'react';
+import { useEffect } from 'react';
 
-
-const Seo = ({ title, description, canonical, jsonLd }) => {
+/**
+ * Lightweight SEO helper (no external deps).
+ * - Sets document.title
+ * - Ensures meta description + og tags
+ * - Adds/updates a canonical link
+ * - Injects JSON-LD (application/ld+json)
+ */
+export default function Seo({ title, description, canonical, jsonLd }) {
   useEffect(() => {
     if (title) document.title = title;
 
@@ -34,7 +40,6 @@ const Seo = ({ title, description, canonical, jsonLd }) => {
       ensureMeta('og:url', canonical, 'property');
     }
 
-    // Inject JSON-LD
     const scriptId = 'jsonld-seo';
     let script = document.getElementById(scriptId);
     if (jsonLd) {
@@ -51,6 +56,5 @@ const Seo = ({ title, description, canonical, jsonLd }) => {
   }, [title, description, canonical, jsonLd]);
 
   return null;
-};
+}
 
-export default Seo;
