@@ -8,7 +8,7 @@ const menuConfig = {
       id: "menu-0",
       title: "Home",
       title_i18n: { en: "Home", es: "Inicio" },
-      path: "/portfolio",
+      path: "/",
       icon: <AiFillHome size={35} />,
       className: "nav-text",
     },

@@ -12,98 +12,120 @@ import {
 } from '@mui/lab';
 import { useLang } from '../../utils/i18n';
 
-const CustomTimeline = ({ items = [], position = 'alternate' }) => {
+/**
+ * Clean, theme‑matched timeline (no heavy gradients), bilingual date tweak
+ * Props
+ *  - items: Array<{ id, date, icon, title, company, description, tags?: string[] }>
+ *  - position: 'alternate' | 'left' | 'right'
+ */
+const Timeline = ({ items = [], position = 'alternate' }) => {
   const [lang] = useLang();
 
   const localizeDate = (d) => {
     if (typeof d !== 'string') return d;
-    // Replace "Present" with ES equivalent; keep other values as-is
     return lang === 'es' ? d.replace(/Present/i, 'Actualidad') : d;
   };
 
   return (
-    <MuiTimeline position={position}>
+    <MuiTimeline position={position} sx={{
+      '& .MuiTimelineItem-root:before': { flex: 0, padding: 0 }, // remove default gutter line
+    }}>
       {items.map((item) => {
         const { id, date, icon, title, company, description, tags = [] } = item || {};
+
         return (
           <TimelineItem key={id}>
-            <TimelineOppositeContent sx={{ m: 'auto 0' }} variant="body2">
-              <Typography variant="body2" sx={{ color: 'text.secondary' }}>
-                {localizeDate(date)}
-              </Typography>
+            {/* Date pill (right on desktop, left on mobile) */}
+            <TimelineOppositeContent
+              sx={{
+                my: 'auto',
+                textAlign: { xs: 'left', md: 'right' },
+                minWidth: { md: 140 },
+              }}
+            >
+              <Chip
+                label={localizeDate(date)}
+                size="small"
+                variant="outlined"
+                sx={(th) => ({
+                  borderColor: th.palette.divider,
+                  bgcolor: alpha(th.palette.secondary.main, 0.06),
+                  fontWeight: 600,
+                })}
+              />
             </TimelineOppositeContent>
 
+            {/* Axis + dot */}
             <TimelineSeparator>
               <TimelineDot
-                sx={(theme) => ({
-                  backgroundColor: theme.palette.primary.main,
+                variant="outlined"
+                sx={(th) => ({
+                  borderColor: th.palette.secondary.main,
+                  backgroundColor: th.palette.background.paper,
                   width: 44,
                   height: 44,
-                  border: '2px solid #fff',
                   display: 'flex',
                   alignItems: 'center',
                   justifyContent: 'center',
-                  boxShadow: '0 2px 8px rgba(0,0,0,.15)'
+                  boxShadow: '0 2px 8px rgba(0,0,0,.06)'
                 })}
               >
-                <Box sx={{ fontSize: 22, color: '#FFFFFF' }}>{icon}</Box>
+                <Box sx={(th) => ({ fontSize: 22, color: th.palette.secondary.main })}>{icon}</Box>
               </TimelineDot>
-              <TimelineConnector sx={(theme) => ({ backgroundColor: alpha(theme.palette.primary.main, 0.6), width: 2 })} />
+              <TimelineConnector sx={(th) => ({ backgroundColor: th.palette.divider, width: 2 })} />
             </TimelineSeparator>
 
-            <TimelineContent sx={{ py: '12px', px: 2 }}>
+            {/* Card content */}
+            <TimelineContent sx={{ py: 1, px: 2 }}>
               <Paper
                 elevation={0}
-                sx={(theme) => ({
+                sx={(th) => ({
                   p: 2,
                   borderRadius: 3,
-                  border: `1px solid ${theme.palette.divider}`,
-                  background: `linear-gradient(180deg, ${alpha(theme.palette.secondary.main, 0.06)} 0%, ${theme.palette.background.paper} 54%)`,
-                  boxShadow: '0 6px 20px rgba(15,18,32,0.08), 0 1px 2px rgba(15,18,32,0.04)',
+                  border: `1px solid ${th.palette.divider}`,
+                  backgroundColor: th.palette.background.paper,
+                  boxShadow: '0 6px 20px rgba(15,18,32,0.06), 0 1px 2px rgba(15,18,32,0.03)',
                   transition: 'transform .2s ease, box-shadow .2s ease',
                   '&:hover': {
                     transform: 'translateY(-2px)',
-                    boxShadow: '0 10px 28px rgba(15,18,32,0.12), 0 3px 10px rgba(15,18,32,0.06)',
+                    boxShadow: '0 10px 28px rgba(15,18,32,0.10), 0 3px 10px rgba(15,18,32,0.06)',
                   },
                 })}
               >
-                <Typography
-                  variant="h6"
-                  component="h1"
-                  sx={{ textAlign: 'center', mb: 0.5, fontWeight: 800, letterSpacing: -0.2 }}
-                >
-                  {title}
-                </Typography>
-                {company && (
-                  <Typography variant="subtitle2" sx={{ textAlign: 'center', color: 'text.secondary', mb: 1 }}>
-                    {company}
+                <Stack spacing={0.75}>
+                  <Typography variant="h6" sx={{ fontWeight: 800, letterSpacing: -0.2 }}>
+                    {title}
                   </Typography>
-                )}
-                {description && (
-                  <Typography variant="body2" sx={{ mb: 1.5, color: 'text.secondary' }}>
-                    {description}
-                  </Typography>
-                )}
+                  {company && (
+                    <Typography variant="subtitle2" sx={{ color: 'text.secondary' }}>
+                      {company}
+                    </Typography>
+                  )}
+                  {description && (
+                    <Typography variant="body2" sx={{ color: 'text.secondary' }}>
+                      {description}
+                    </Typography>
+                  )}
 
-                {/* High-contrast, accessible tag pills */}
-                {Array.isArray(tags) && tags.length > 0 && (
-                  <Stack direction="row" spacing={1} useFlexGap flexWrap="wrap">
-                    {tags.map((t) => (
-                      <Chip
-                        key={t}
-                        size="small"
-                        label={t}
-                        color="secondary"
-                        variant="filled"
-                        sx={(theme) => ({
-                          backgroundColor: alpha(theme.palette.secondary.main, 0.30),
-                          border: `1px solid ${alpha(theme.palette.secondary.main, 0.45)}`,
-                          color: theme.palette.primary.main,
-                        })}
-                      />
-                    ))}
-                  </Stack>
-                )}
+                  {/* Tags: compact, high‑contrast but subtle */}
+                  {Array.isArray(tags) && tags.length > 0 && (
+                    <Stack direction="row" spacing={1} useFlexGap flexWrap="wrap" sx={{ pt: 0.5 }}>
+                      {tags.map((t) => (
+                        <Chip
+                          key={t}
+                          size="small"
+                          label={t}
+                          sx={(th) => ({
+                            bgcolor: alpha(th.palette.secondary.main, 0.16),
+                            border: `1px solid ${alpha(th.palette.secondary.main, 0.35)}`,
+                            color: th.palette.primary.main,
+                            fontWeight: 700,
+                          })}
+                        />
+                      ))}
+                    </Stack>
+                  )}
+                </Stack>
               </Paper>
             </TimelineContent>
           </TimelineItem>
@@ -113,6 +135,7 @@ const CustomTimeline = ({ items = [], position = 'alternate' }) => {
   );
 };
 
-export default CustomTimeline;
+export default Timeline;
+
 
 
